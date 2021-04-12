@@ -1,0 +1,62 @@
+article{
+    display: flex;
+    max-width: 1150px;
+    margin: 0 auto;
+    justify-content:center;
+    flex-wrap: wrap;
+
+
+    & .blog-preview-container{
+        height: 290px;
+        width: 280px;
+        transition: transform 100ms;
+        overflow: hidden;
+        position: relative;
+        margin: 10px 0;
+        margin-left: 3px ;
+
+        &:hover{
+            transform: scale(1.03);
+        }
+    }
+
+    & div.image {
+        height: 290px;
+        width: 280px;
+        background: #000;
+        background-image: url('../images/pexels-neha-pandey-2446439.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    }
+    & div {
+        padding: 10px;
+        
+
+    }
+    & div.content {
+        width: 280px;
+        background: rgba(255, 255, 255, 0.26);
+        color: white;
+        position: absolute;
+        bottom: -100px;
+        transition: all 150ms;
+
+
+        & a{
+            position: absolute;
+            padding: 5px;
+            right: 15px;
+            bottom: 3px;
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.39);
+            color: white;
+        }
+    }
+}
+
+.blog-preview-container:hover > div.content{
+    bottom: 0;
+}
+

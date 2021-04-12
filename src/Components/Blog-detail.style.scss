@@ -1,0 +1,37 @@
+div.blog_detail{
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        max-width: 850px;
+        position: relative;
+        margin: 40px auto;
+        padding: 10px;
+
+        h2{
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            // border-bottom: 3px double #fff;
+            
+        }
+
+        p{
+            margin: 17px 0 ;
+             color: #ddd;
+        }
+
+        div{
+            text-align: justify;
+            color:#fff;
+        }
+
+        button {
+        //  width: 10%;
+         padding: 10px;
+         margin: 10px;
+        //  position: absolute;
+        //  right: 60px;
+        //  bottom: -50px;
+        }
+    }
+}

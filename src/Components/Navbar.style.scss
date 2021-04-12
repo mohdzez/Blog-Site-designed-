@@ -1,0 +1,38 @@
+
+nav{
+    display: flex;
+    max-width: 800px;
+    margin: 10px auto;
+    justify-content: space-between;
+    padding: 10px;
+
+
+
+    & div.hero-text h1 {
+        color: rgba(255, 255, 255, 0.856);
+    }
+
+    .nav-links a {
+    padding:8px;
+    text-decoration: none;
+    background: #000;
+    margin: 5px;
+    color: #fff;
+    transition: padding 200ms;
+
+
+    
+    
+    &:nth-of-type(1){
+        background: rgb(88, 86, 86);
+    }
+
+
+
+    &:hover{
+        padding: 10px;
+    }
+    }
+    
+
+}
