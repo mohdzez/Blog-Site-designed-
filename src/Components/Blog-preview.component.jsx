@@ -11,11 +11,12 @@ const BlogPreview = ({ blogs }) => {
           className="blog-preview-container"
           key={blog.id}
         >
-          <div className="image">
-            <img src="../images/pexels-kaboompics-com-5836.jpg" alt="" />
+          <div className="image" 
+          style={{ 
+            backgroundImage: `url(${blog.image})` 
+          }}
+          >
           </div>
-          {console.log(blog.image)}
-          
           <div className="content">
             <h1>{blog.title}</h1>
             <p>Written By {blog.author}</p>
